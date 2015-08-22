@@ -1,0 +1,9 @@
+# Clojure for the Brave and True: Chapter 4 Exercises
+
+Chapter 4 introduced sequences (such as lists, vectors, maps) and the collection abstraction, which defines a set of functions that can be used on "collections" which are generally sequences.  This introduced a lot of important concepts, such as how to use the core data structures of Clojure properly, how to use map and anonymous functions, even how to do Haskell-like currying with `partial`.
+
+## The Exercises
+1.  Turn the result of the `glitter-filter` function into a list of names
+2.  Write a function `append` which will append a name to your list of suspects
+3.  Write a function `validate` which will check that `:name` and `:glitter-index` are present during `append`
+4.  Write a function that will take your list of maps and convert it back to a CSV string and output it as a file
