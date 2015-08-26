@@ -1,0 +1,11 @@
+# Clojure for the Brave and True: Chapter 5 Exercises
+
+Chapter 5 looked at pure functions and how to work with immutable objects in a functional way. The discussion of Peg Thing and it's code organization was a very useful tool in bridging the gap between small Clojure examples and what a larger Clojure program would look like.
+
+## The Exercises
+
+1. You used `(comp :intelligence :attributes)` to create a function that returns a character’s intelligence. Create a new function, `attr`, that you can call like `(attr :intelligence)` and that does the same thing
+2. Implement the `comp` function
+3. Implement the `assoc-in` function
+4. Look up and use `update-in`
+5. Implement `update-in`
