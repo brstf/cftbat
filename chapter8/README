@@ -1,0 +1,9 @@
+# Clojure for the Brave and True: CHapter 8 Exercises
+
+Chapter 8 continued what Chapter 7 started: Macros. First, it covered the syntax of defining macros, then discussed some of the pitfalls and concerns with defining too many macros.  The exercises in this chapter were pretty tough to think about, especially the new syntax and quoting.
+
+## The Exercises
+
+1. Write the macro `when-valid` so that it behaves similarly to `when`.
+2. You saw that `and` is implemented as a macro. Implement `or` as a macro.
+3. In Chapter 5 you created a series of functions `( c-int , c-str , c-dex )` to read an RPG character’s attributes. Write a macro that defines an arbitrary number of attribute-retrieving functions using one macro call.
