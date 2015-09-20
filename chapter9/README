@@ -1,0 +1,9 @@
+# Clojure for the Brave and True: Chapter 9 Exercises
+
+This chapter covered the basics of the concurrency functions provided in the core Clojure library. Clojure offers very simple syntax for creating a new thread to execute a task in the `future`, create tasks to be executed later with `delay`, and deliver results of different threads using `promise`, but even with the simple functions and syntax, concurrent programs can get complex very quickly.  The exercises this week ended up filling very few lines of code, but required a lot of thought to get them right.
+
+## The Exercises
+
+1. Write a function that takes a string as an argument and searches for it on Bing and Google using the `slurp` function. Your function should return the HTML of the first page returned by the result.
+2. Update your function so it takes a second argument consisting of the search engines to use.
+3. Create a new function that takes a search term and search engines as arguments, and returns a vector of the URLs from the first page of search results from each search engine
