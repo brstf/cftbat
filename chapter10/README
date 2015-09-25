@@ -1,0 +1,8 @@
+# Clojure for the Brave and True: Chapter 10 Exercises
+
+Chapter 10 continued to introduce concepts related to concurrency in Clojure. References types of `atom`, `ref`, and dynamic vars let you access shared state between threads that makes guarantees on data integrity.  The transactional memory model lets each thread change state without worrying about orchestrating how each thread interacts to ensure no simultaneous changes.  This was a pretty dense chapter, and the exercises didn't cover all of it, so I'll definitely have to re-examine this chapter and try a few of my own exercises to try out `ref`s in more detail, use `watch`s and `validator`s, and find the best ways to organize futures in concurrent Clojure programs.
+
+## The Exercise
+1. Create an `atom` with the initial value 0, use `swap!` to increment a couple of times, and then dereference it
+2. Create a function that uses `future`s to parallelize the task of downloading random quotes from http://www.braveclojure.com/random-quote using `(slurp "http://www.braveclojure.com/random-quote")`. The `future`s should update an `atom` that refers to a total word count for all quotes. The function will take the number of quotes to download as an argument and return the `atom`s final value.
+3. Create a representation of two characters in a game. The first character has 15 health points out of a total of 40. The second character has a healing potion in his inventory. Use `ref`s and transactions to model the consumption of the healing potion and the first character healing.
