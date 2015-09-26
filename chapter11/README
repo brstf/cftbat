@@ -1,0 +1,7 @@
+# Clojure for the Brave and True: Chapter 11 Exercises
+
+There were no exercises printed for Chapter 11, but core.async being such an important and useful library, I couldn't not do some form of exercise. I chose to re-implement the random quote word count function from Chapter 10 in core.async rather than using futures and promises. Interestingly, if the count of random-quotes to get is increased by too much, the server responds with 503, so we should really throttle our accesses to the server somehow.
+
+## Exercises
+
+1. Translate the random quote exercise from Chapter 10 to use `core.async` instead of `future`s
