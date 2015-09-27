@@ -1,0 +1,10 @@
+# Clojure for the Brave and True: Chapter 13
+
+Chapter 13 covered a few constructs of Clojure that to me seemed to provide some of the power of object-oriented programming, but in a functional way.  Multi-methods reflect the Java idea of inheritance and polymorphism, but rather than defining methods as functions *of* objects, the correct function for a given object is determined by the dispatch value.  Protocols let you define functions similarly, but instead of defining a single function and each instance of it for different inputs, protocols define a sort of interface that can be implemented for different types of inputs. This is useful for defining functions that will work similarly, but require different implementations. To reflect this idea, I defined a protocol that operates on `java.util` collections. The `Stack` and `ArrayList` have different ideas for "adding" items to the `Collection, but after implementing the protocol, we can treat each the same. Finally, `record`s are a way to define the notion of a Clojure "object". They're essentially more efficient maps for types of data that are commonly used in your program. They can also extend `protocol`s to have different records implement common interfaces. Overall, this chapter served as a light introduction to some of the more advanced ways of storing data and defining ways to interact with it as it applies to larger programs.
+
+## The Exercises
+
+1. Extend the `full-moon-behavior` multimethod to add behavior for your own kind of were creature
+2. Create a `WereSimmons` `record` type, then extend the `WereCreature` `protocol`
+3. Create your own `protocol`, and then extend it using `extend-type` and `extend-protocol`
+4. Create a role-playing game that implements behavior using multiple dispatch
